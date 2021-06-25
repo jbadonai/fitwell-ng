@@ -29,7 +29,7 @@ def login_view(request):
         user = authenticate(request, username=username, password=password)
         if user is not None:
             login(request, user)
-            return redirect('/')
+            return redirect('/dashboard')
         else:
             message = "Login Failed!"
     return render(request, 'login.html', {"message": message})
