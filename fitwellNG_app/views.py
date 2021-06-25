@@ -44,9 +44,10 @@ def is_valid(data):
 
     # validate password
     pass1 = data['password1']
-    pass2 = data['password1']
+    pass2 = data['password2']
 
-    if pass1 != pass2 or pass1 == "" or pass2 == "":
+
+    if pass1 != pass2 or pass1 == "" or pass2 == "" or len(pass1) != len(pass1):
         message.append(('password', 'Password do not match.'))
 
     # validate security question
@@ -59,13 +60,26 @@ def is_valid(data):
 
     newdata = ""
     if len(message)> 0:
-        for index, m in enumerate(message, start=1):
-            d = f"{index}. {m[1]}"
-            newdata += f"{d}\n\n"
+        if len(message) > 1:
+            for index, m in enumerate(message, start=1):
+                d = f"{index}. {m[1]}"
+                newdata += f"{d}<br>"
+
+            newdata = f"Signup Failed due to the errors below <br><br> {newdata}" \
+                f"<br><br> Please provide all the required information above and try again"
+
+        if len(message) == 1:
+            for index, m in enumerate(message, start=1):
+                d = f"{index}. {m[1]}"
+                newdata += f"{d}<br>"
+
+            newdata = f"Signup Failed due to the error below <br><br> {newdata}" \
+                f"<br><br> Please provide the required information above and try again"
 
     if len(message) == 0:
         return None
     else:
+
         return newdata
 
 
@@ -91,7 +105,18 @@ def sign_up(request):
 
                 newUser.save()
             except Exception as e:
-                return render(request, 'sign-up.html', {'message': f'\n{e}'})
+                # check for email address issue
+                if str(e).lower() == 'UNIQUE constraint failed: fitwellNG_app_user.email'.lower():
+                    m = f"<b>Error:</b> <br> User with Email Address ' {data['email']} ' already exists. Please choose another Email Address"
+                    return render(request, 'sign-up.html', {'message': m })
+                elif str(e).lower().__contains__("value must be a decimal number"):
+                    m = "<b>Error: </b><br><br>Please specify a value for 'Weight' and 'Height' "
+                    return render(request, 'sign-up.html', {'message': m})
+
+                else:
+                    return render(request, 'sign-up.html', {'message': f'\n{e}'})
+
+
 
             # return render(request, 'login.html', {'message': "Sign up successful"})
             return redirect('/login')

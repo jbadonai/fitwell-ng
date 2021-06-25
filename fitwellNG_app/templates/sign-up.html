@@ -30,16 +30,18 @@
                 {% if message %}
                 <div style="text-align: left; border: solid; color:red; margin-left: 20%; margin-right: 20%; padding: 1em" >
 
-                        <h3> Signup Failed due to the error(s) below</h3>
+                        <!--<h3> Signup Failed due to the error(s) below</h3>-->
                             <p></p><br>
-                            {{ message | linebreaks }}
+                            {% autoescape off %}
+                            {{ message }}
+                            {% endautoescape %}
                             <!--{% for data in  message %}-->
                                 <!--<p>-->
                                     <!--{{ data }} <br>-->
                                 <!--</p>-->
                             <!--{% endfor %}-->
                     <p></p><br>
-                    <p>Please Fix the errors and try again.</p>
+                    <!--<p>Please provide all required information above and try again.</p>-->
 
                 </div>
                 {% endif %}
