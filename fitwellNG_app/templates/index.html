@@ -89,7 +89,12 @@
   <div class="featured">
     <div class="featured__content">
       <div class="heading-header">
-          <h1 class="heading-2">Welcome <i style="color:red">{{user.email }}</i></h1>
+          <h1 class="heading-2">Welcome
+              {% if user.is_authenticated %}
+                <i class="paragraph" style="padding-bottom:5em; background: red; color: white; padding: 0.5em; background: #da0013; border-radius: 6px;" >{{user.email | lower }}</i>
+              {% endif %}
+
+          </h1>
         <hr class="seperator">
         <p class="paragraph">
           Our vision in Med-In specialist Hospital is to be a one-stop hospital that provides fully integrated Medicare
