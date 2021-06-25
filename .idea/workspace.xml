@@ -13,7 +13,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/fitwellNG_app/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="203">
+            <state relative-caret-position="3995">
               <caret line="235" column="30" selection-start-line="235" selection-start-column="19" selection-end-line="235" selection-end-column="30" />
             </state>
           </provider>
@@ -22,8 +22,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/fitwellNG_app/templates/dashboard.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="112">
-              <caret line="58" column="58" selection-start-line="58" selection-start-column="58" selection-end-line="58" selection-end-column="58" />
+            <state relative-caret-position="153">
+              <caret line="9" column="9" lean-forward="true" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="67" />
             </state>
           </provider>
         </entry>
@@ -57,9 +57,9 @@
       <find>welcome</find>
       <find>get starte</find>
       <find>get start</find>
-      <find>href</find>
       <find>src</find>
       <find>james</find>
+      <find>href</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -444,15 +444,15 @@
     <entry file="file://$PROJECT_DIR$/fitwellNG_app/static/css/all.min.css" />
     <entry file="file://$PROJECT_DIR$/fitwellNG_app/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
+        <state relative-caret-position="3995">
           <caret line="235" column="30" selection-start-line="235" selection-start-column="19" selection-end-line="235" selection-end-column="30" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/fitwellNG_app/templates/dashboard.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="58" column="58" selection-start-line="58" selection-start-column="58" selection-end-line="58" selection-end-column="58" />
+        <state relative-caret-position="153">
+          <caret line="9" column="9" lean-forward="true" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="67" />
         </state>
       </provider>
     </entry>
