@@ -31,7 +31,7 @@ def login_view(request):
             login(request, user)
             return redirect('/dashboard')
         else:
-            message = "Login Failed!"
+            message = "Login Failed! Wrong username or password"
     return render(request, 'login.html', {"message": message})
 
 

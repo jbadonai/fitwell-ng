@@ -109,7 +109,7 @@
 
             {% if user.is_authenticated %}
             <br>
-            <b class="paragraph" data-aos="fade-right">{{user.email | lower }}</b>
+            <h3 class="paragraph" data-aos="fade-right">{{user.first_name | capfirst }} {{ user.last_name | capfirst}}</h3>
             {% endif %}
             <p class="mt-3" data-aos="fade-right" data-aos-duration="1000">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum
