@@ -46,7 +46,6 @@ def is_valid(data):
     pass1 = data['password1']
     pass2 = data['password2']
 
-
     if pass1 != pass2 or pass1 == "" or pass2 == "" or len(pass1) != len(pass1):
         message.append(('password', 'Password do not match.'))
 
@@ -85,7 +84,7 @@ def is_valid(data):
 
 def sign_up(request):
     if request.method == 'POST':
-
+        print(request.POST)
         data = request.POST
         ans = is_valid(data)
         if ans is None:
@@ -115,8 +114,6 @@ def sign_up(request):
 
                 else:
                     return render(request, 'sign-up.html', {'message': f'\n{e}'})
-
-
 
             # return render(request, 'login.html', {'message': "Sign up successful"})
             return redirect('/login')
