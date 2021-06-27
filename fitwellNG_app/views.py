@@ -106,7 +106,7 @@ def sign_up(request):
                 newUser.save()
             except Exception as e:
                 # check for email address issue
-                if str(e).lower() == 'UNIQUE constraint failed: fitwellNG_app_user.email'.lower() or str(e).lower() == 'duplicate key value violates unique constraint "fitwellNG_app_user_email_key'.lower():
+                if str(e).lower() == 'UNIQUE constraint failed: fitwellNG_app_user.email'.lower() or str(e).lower().__contains__('duplicate key value violates unique constraint'):
                     m = f"<b>Error:</b> <br> User with Email Address ' {data['email']} ' already exists. Please choose another Email Address"
                     return render(request, 'sign-up.html', {'message': m })
                 elif str(e).lower().__contains__("value must be a decimal number"):
