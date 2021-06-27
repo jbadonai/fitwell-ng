@@ -31,8 +31,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/fitwellNG_app/templates/login.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="38" column="58" selection-start-line="38" selection-start-column="52" selection-end-line="38" selection-end-column="58" />
+            <state relative-caret-position="93">
+              <caret line="38" column="84" selection-start-line="38" selection-start-column="84" selection-end-line="38" selection-end-column="84" />
               <folding>
                 <element signature="n#style#0;n#p#0;n#div#2;n#div#1;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -154,7 +154,6 @@
         <option value="$PROJECT_DIR$/procfile" />
         <option value="$PROJECT_DIR$/fitwellNG_app/templates/landing.html" />
         <option value="$PROJECT_DIR$/fitwellNG_app/templates/index_old.html" />
-        <option value="$PROJECT_DIR$/fitwellNG_app/templates/login.html" />
         <option value="$PROJECT_DIR$/fitwellNG_app/static/css/common.css" />
         <option value="$PROJECT_DIR$/Procfile" />
         <option value="$PROJECT_DIR$/fitwellNG_app/admin.py" />
@@ -165,6 +164,7 @@
         <option value="$PROJECT_DIR$/fitwell_backend/settings.py" />
         <option value="$PROJECT_DIR$/fitwellNG_app/templates/about.html" />
         <option value="$PROJECT_DIR$/fitwellNG_app/templates/index.html" />
+        <option value="$PROJECT_DIR$/fitwellNG_app/templates/login.html" />
       </list>
     </option>
   </component>
@@ -516,8 +516,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/fitwellNG_app/templates/login.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="38" column="58" selection-start-line="38" selection-start-column="52" selection-end-line="38" selection-end-column="58" />
+        <state relative-caret-position="93">
+          <caret line="38" column="84" selection-start-line="38" selection-start-column="84" selection-end-line="38" selection-end-column="84" />
           <folding>
             <element signature="n#style#0;n#p#0;n#div#2;n#div#1;n#main#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
