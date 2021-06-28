@@ -7,8 +7,73 @@
   font-family: 'Sarabun', sans-serif;
 }
 
+/* Totop Navigation */
+
+#topicon{
+  position: relative;
+  scroll-behavior: smooth;
+}
+
+.totop{
+  background-color: #fff;
+  border-radius: 50%;
+  padding: 0 12px;
+  text-decoration: none;
+border: 3px solid #124E78;
+bottom: 30px;
+right: 20px;
+position: fixed;
+transition: 1s ease-in-out;
+font-size: 25px;
+display: none;
+}
+
+.totop.scrollup{
+  display: block;
+}
+
+.totop.scrollup{
+  display: block;
+}
+
+.totop:hover{
+  background-color: #124e78;
+  transition: background .5s ease-in-out;
+  color: #ffffff;
+  border: 3px solid #ffffff;
+}
+
+.din-color{
+color: #124E78;
+}
+
+/* End of Totop Navigation */
+
 .mybg-nav {
   background-color: #fff !important;
+}
+
+.navbar-toggler {
+  color: none;
+  border: 0 !important;
+  outline: 0 !important;
+}
+
+.navbar-toggler:focus {
+  border: 0 !important;
+  outline: 0 !important;
+}
+
+.navbar > button {
+  border: 0 !important;
+  outline: 0 !important;
+}
+
+.navbar-toggler-icon {
+  color: none;
+  border: 0 !important;
+  outline: 0 !important;
+  height: 1em;
 }
 
 .nav-link {
@@ -24,6 +89,10 @@
 
 .nav-link:hover {
   color: #ee2234 !important;
+}
+
+div.btn-desk {
+  display: none !important;
 }
 
 .my-btn {
@@ -110,17 +179,17 @@
 .footer-container {
   min-height: 462px;
   height: 100%;
-  background: #124e78;
+  background: #0a2c44;
 }
 .footer-img {
   position: relative;
 }
 
-svg {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.footer-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }
 
 .hr {
@@ -130,15 +199,44 @@ svg {
   height: 2px;
 }
 
+#card-mb {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+}
+
 /* End of footer */
 
 /* mobile Responsiveness */
 
 @media (max-width: 991px) {
+  .navbar-brand img {
+    width: 100%;
+  }
+
+  .btn-hide-mb {
+    display: none;
+  }
+
+  div.btn-desk {
+    display: flex !important;
+  }
+
+  .my-btn {
+    margin: 0 5px !important;
+    font-size: 12px !important;
+  }
+
   .h3-header {
     font-size: 30px;
     line-height: 40px;
     letter-spacing: 0.04em;
+  }
+
+  #card-mb {
+    justify-content: space-between !important;
+    align-items: center !important;
+    flex-direction: row !important;
   }
 
   .nav-link {
@@ -184,7 +282,7 @@ svg {
 
   .footer-container {
     height: 100%;
-    background: #124e78;
+    background: #0a2c44;
   }
   svg {
     /* position: relative; */
@@ -234,5 +332,15 @@ svg {
   .m-tip {
     display: flex;
     flex-direction: column;
+  }
+}
+
+@media (max-width: 408px) {
+  .btn-hide-mb {
+    display: flex;
+  }
+
+  div.btn-desk {
+    display: none !important;
   }
 }
