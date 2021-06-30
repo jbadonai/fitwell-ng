@@ -21,7 +21,7 @@
 .lhs-container {
   width: 50%;
   position: relative;
-  background-image: url('../images/lhs-img.png');
+  background-image: url("../images/lhs-img.cb6e675aa6ba.png");
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;

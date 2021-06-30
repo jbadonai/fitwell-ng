@@ -6,7 +6,7 @@ import requests
 
 def home(request):
     videoList = getVideos()
-    print(videoList)
+    # print(videoList)
     return render(request, 'index.html', {'videoList': videoList})
     # return render(request, 'landing.html')
 
